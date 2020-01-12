@@ -11,3 +11,6 @@ services:
         - influxdb:/var/lib/influxdb
       labels:
           org.label-schema.group: "monitoring"
+
+volumes:
+  influxdb:
