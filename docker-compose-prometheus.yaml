@@ -10,7 +10,7 @@ services:
       - 'prometheus-conf-ext:/etc/config:rw'
     command:      
       - "--storage.tsdb.path=/prometheus"
-      - "--storage.tsdb.retention.time=183d"      
+      - "--storage.tsdb.retention.time=15d"      
       - "--web.console.libraries=/usr/share/prometheus/console_libraries"
       - "--web.console.templates=/usr/share/prometheus/consoles" 
       - "--config.file=/etc/config/prometheus.yml"       
